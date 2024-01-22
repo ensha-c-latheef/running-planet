@@ -32,8 +32,8 @@
   </div>
 
   <img src="{{event.imageUrl}}" class="img-fluid rounded w-75 d-block h-75" alt="{{name}}" />
-  <p class="mt-3">{{event.description}}</p>
-  <p class="mt-3">Organiser: {{event.organiser.name}} {{event.organiser.surname}}</p>
+  <p class="mt-3 w-75 lead">{{event.description}}</p>
+  <p class="mt-5">Organiser: <b>{{event.organiser.name}} {{event.organiser.surname}}</b></p>
   <p class="mt-3">For more info, vist - <a href={{event.website}}>{{event.website}}</a></p>
   
   {{#if hasLoggedIn}}
